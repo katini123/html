@@ -1,0 +1,102 @@
+*{margin:0;
+
+  padding:0;
+ }
+body{
+	background: url(flower.jpg) no-repeat center 
+		fixed;
+	background-size: cover;
+
+}
+h1
+
+{
+	text-align:center;
+	color:white;
+	background: rgba(0,0,0,0.4);
+	padding:30px;
+
+}
+
+h2
+{
+	text-align:center;
+	color:white;
+}
+.registration{
+
+	margin:auto;
+	width:30%;
+	text-align:center;
+	color:white;
+	background:rgba(0,0,0,0.4);
+	border: 2px solid white;
+	padding:20px;
+}
+input[type=text],input[type=email],input[type=address],input[list=FITEM]
+
+{
+	width:60%;
+	padding:5px;
+	border-radius: 5px;
+	border:1px solid white;
+	outline: 0;
+	font-family: serif;
+	font-size:18px;
+	background:none;
+	color:white;
+
+}
+input[type=number]
+{
+	width:39%;
+	padding:5px;
+	border-radius: 5px;
+	border:1px solid white;
+	outline: 0;
+	font-family: serif;
+	font-size:18px;
+	background:none;
+	color:white;
+
+}
+#codenum{
+	width:20%;
+	padding:5px;
+	border-radius: 5px;
+	border:1px solid white;
+	outline: 0;
+	font-family: serif;
+	font-size:18px;
+	background:none;
+	color: white;
+}
+
+.dob
+{
+	text-align left;
+
+}
+
+#submit{
+
+	width:150px;
+	padding:5px;
+	font-family:serif;
+	font-size:18px;
+	border:1px solid white;
+	outline:0;
+	border-radius:5px;
+	background:none;
+	color:white;
+}
+#submit:hover{
+	background-color: #123456;
+}
+
+
+::placeholder
+{
+	color:white;
+}
+;

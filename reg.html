@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>Registration Form</title>
+<link rel="stylesheet" type="text/css"
+href="reg.css">
+
+
+<script>
+
+function validateForm() {
+  var x = document.forms["registration"]["fname"].value;
+  var y = document.forms["registration"]["lname"].value;
+  var em = document.forms["registration"]["email"].value;
+  var d = document.forms["registration"]["odate"].value;
+  var p = document.forms["registration"]["oitem"].value;
+  var rp = document.forms["registration"]["daddress"].value;
+  var n = document.forms["registration"]["cnumber"].value;
+  
+  
+  if (x == "") {
+    alert("First Name must be filled out");
+    return false;
+  }
+  if (y == "") {
+    alert("Last Name must be filled out");
+    return false;
+  }
+  
+  
+   if (d == "") {
+    alert("Date must be filled out");
+    return false;
+  }
+  
+   if (p == "") {
+    alert("Item must be selected");
+    return false;
+  }
+  
+   if (rp == "Delivery Address must be filled out") {
+    alert("");
+    return false;
+  }
+
+  
+  
+  if (em == "") {
+	alert('Please provide a  email address');
+    
+    return false;
+
+  }
+ 
+    
+ if (n == "") {
+    alert("Contact Number must be filled out");
+    return false;
+  }
+   
+ 
+
+return true;
+
+}
+
+ 
+</script> 
+
+</head>
+
+
+
+
+<body>
+  <form action="connect1.php" method="post">
+<h1>TADUBI FLOWER GARDEN</h1>><br>
+	
+<div class="registration">
+
+<form id="registration" method="post" action="post.php" onsubmit="return validateForm()"  >
+
+
+
+<h3>Place Your Order</h3><br>
+<input type="text" name="fname" id="Fname" placeholder="First Name"><br>
+<br>
+
+<input type="text" name="lname" id="Lname" placeholder="Last Name"><br>
+<br>
+
+<input type="email" name="email" id="email" placeholder="Email"><br>
+
+
+
+<label>Order Item<br>
+<input list="FITEM" name="myBrowser" id="oitem" /></label>
+<datalist id="FITEM">
+  <option value="Rose">
+  <option value="Jasmine">
+  <option value="Cactus">
+  <option value="Aloevera">
+  <option value="Marigold">
+  <option value="Sunflower">
+</datalist><br>
+
+<label for="date">Order Date</label><br>
+<input type="text" name="date" id="odate" placehoder="Order date" onfocus="(this.type='date')" onblur="(this.type='text')" ><br>
+<br>
+
+
+
+<input type="address" name="address" id="daddress" placeholder="Delivery Address"><br><br>
+
+
+<select id="codenum">
+<option>+ 91 </option>
+<option>+ 92 </option>
+<option>+ 93 </option>
+<option>+ 94 </option>
+</select>
+<input type="number" name="cnumber" id ="cnumber" placeholder="Contact Number"><br> <br>
+
+<input type="radio" name="gender" id="M" value="M"><span id="ma">
+&nbsp;Male</span>
+<input type="radio"  name="gender" id="F" value="F"><span id="ma">
+&nbsp;Female</span>
+<input type="radio"  name="gender" id="O" value="O"><span id="ma">
+&nbsp;Others</span><br><br>
+<input type="checkbox" id="check"><span id="check">I agree to all the terms and conditions.</span><br><br>
+
+<button type="submit" id ="submit">Submit</buton><br>
+
+
+</form>
+
+
+
+
+
+
+
+
+</body>
+</html>
