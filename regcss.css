@@ -1,0 +1,54 @@
+
+.regform .register{
+  padding: 16px;
+border-style: line;
+box-sizing: border-box;
+border-style: solid;
+top-margin: 300px;
+
+}
+
+
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 15px;
+  margin: 15px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.regbutton{
+background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+}
+
+
+input[type=radio]{
+
+width: 10%;
+  padding: 15px;
+  margin: 15px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.uploadbtn{
+background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 7%;
+  opacity: 0.9;
+}
+

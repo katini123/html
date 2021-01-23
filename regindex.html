@@ -1,0 +1,127 @@
+<html>
+<head>
+
+<title>Conference Registration form</title>
+
+<link rel="stylesheet" href="regcss.css">
+
+<script>
+
+function validateForm() {
+  var x = document.forms["register"]["name"].value;
+  var y = document.forms["register"]["insname"].value;
+  var z = document.forms["register"]["line1"].value;
+  var q = document.forms["register"]["state"].value;
+  var p = document.forms["register"]["pincode"].value;
+  var mb = document.forms["register"]["mobno"].value;
+  var em = document.forms["register"]["email"].value;
+  var pd = document.forms["register"]["pwd"].value;
+  var pdr = document.forms["register"]["pwd-repeat"].value;
+
+  
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  if (y == "") {
+    alert("insName must be filled out");
+    return false;
+  }
+  
+   if (z == "") {
+    alert("line1 must be filled out");
+    return false;
+  }
+   if (q == "") {
+    alert("state must be filled out");
+    return false;
+  }
+  
+   if (p == "") {
+    alert("pincode must be filled out");
+    return false;
+  }
+  
+   if (mb == "") {
+    alert("mobileno must be filled out");
+    return false;
+  }
+  
+  if (em == "") {
+	alert('Please provide a  email address');
+    
+    return false;
+
+  }
+ 
+    
+ if (pd == "") {
+    alert("password must be filled out");
+    return false;
+  }
+   
+if (pdr == ""){
+  
+alert("password must be filled out!");  
+return false;  
+
+     } 
+
+
+return true;
+
+}
+
+ 
+</script> 
+
+</head>
+
+<body>
+
+<div class="regform">
+<form  class="register" name="register" method="post" action="insert.php" onsubmit="return validateForm()">
+<h1><p>National Science Conference Registration Form</p></h1>
+
+<label for="name">Your Name:</lable></br>
+<input type="text" name="name" Id="name" placeholder="Enter your Name" maxlength="50" ></br>
+
+<label for="insname">Institution:</lable></br>
+<input type="text" name="insname" Id="insname"  maxlength="150" placeholder="Enter your Institution Name"></br>
+
+<label for="add">Address:</lable></br>
+<input type="text" name="line1" Id="line1" placeholder="Enter Line1 Address"></br>
+
+<input type="text" name="state" id="state" placeholder="Enter State">
+<input type="text" name="pincode" Id="pincode" placeholder="Enter Pincode"></br>
+
+<label for="mobno">Contact No:</lable></br>
+<input type="text" name="mobno" Id="mobno" placeholder="Enter Mobile No"></br>
+
+<label for="Email">Email:</lable></br>
+<input type="text" name="email" Id="email" placeholder="Enter your Email" ></br>
+
+<label for="pwd">Enter Password</lable></br>
+<input type="password" placeholder="Enter password" name="pwd" Id="pwd"></br>
+
+<label for="pwd-repeat">Re-enter password</lable></br>
+<input type="password" placeholder="Re-enter password" name="pwd-repeat" Id="pwd-repeat"></br>
+
+<p>Upload your image for Identify purpose</p></br>
+<label for="img">Select image:</label>
+  <input type="file" Id="userimg" name="userimg" accept="image/*">
+  <button type="submit" class="uploadbtn">Upload</button></br>
+
+<lable>Accomdation Details</label></br>
+ <input type="radio" Id="acc1" name="acc" value="Refreshments+lunch = Rs.350">Refreshments+lunch = Rs.350</input></br>
+<input type="radio" Id="acc2" name="acc" value="Refreshments+lunch+Room = Rs.750">Refreshments+lunch+Room = Rs. 750</input></br>
+
+
+<button type="submit" value="submit" class="regbutton">Register</button>
+
+
+</form>
+</div>
+
+</body>
+</html>
